@@ -1,3 +1,4 @@
+
 import numpy as np
 class Ruta:
     def __init__(self, ciudadOrigen:str, ciudadDestino:str, horaSalida:int, costoPasaje:float, busEnRuta):

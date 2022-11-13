@@ -1,14 +1,14 @@
 
 from typing import List
 from Bus import Bus
-from Rutas import Rutas
+from ClaseRuta import Ruta
 class Empresa:
 
     
     def __init__(self, nombre:str):
         self.nombre = nombre
         self.buses : List[Bus] = []
-        self.rutas : List[Rutas]
+        self.rutas : List[Ruta]
         #self.ciudadesOperacion = ("Santa Marta", "Barranquilla", "Valledupar", "Monteria", "Riohacha", "Sincelejo", "Cartagena")
         #self.tamañosDeBus = (7, 11, 13)
         

@@ -19,7 +19,18 @@ class Empresa:
         return busAgregado
 
 
-    def AgregarRutas(self): 
-        pass
+    def AgregarRuta(self, ruta:Ruta): 
+        rutaAgregada= False
+        posibilidadAgregarRuta= False
+        rutas: Ruta
+        for rutas in self.listaRutas:
+            if (ruta[0]==self.listaRutas[rutas[0]]) and (ruta[1]==self.listaRutas[rutas[1]]) and (ruta[2]==self.listaRutas[rutas[2]]):
+                posibilidadAgregarRuta=False
+            else:
+                posibilidadAgregarRuta=True
+        if posibilidadAgregarRuta==True:
+            self.listaRutas.append(ruta)
+            rutaAgregada= True
+        return rutaAgregada
 
 
